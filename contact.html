@@ -36,6 +36,36 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  <style>
+    /* Form element styling */
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Button styling */
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 
 <body class="contact-page">
@@ -53,11 +83,13 @@
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Request Tutor</a></li>
+
           <!-- <li><a href="courses.html">Courses</a></li> -->
           <!-- <li><a href="trainers.html">Trainers</a></li> -->
           <!-- <li><a href="events.html">Events</a></li> -->
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
@@ -74,7 +106,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -166,13 +198,7 @@
             </div> -->
             <!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+91 7581876364</p>
-              </div>
-            </div><!-- End Info Item -->
+
 
             <!-- <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
@@ -186,38 +212,27 @@
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+          <div class="form-container">
+            <form action="https://formspree.io/f/xjkbbpan" method="POST" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
-
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
-
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
-
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                <div class="col-md-12">
+                  <button type="submit" class="btn-submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 

@@ -157,7 +157,7 @@
 
       <div class="container">
         <h2 class="text-center mb-4">Tutoring Request Form</h2>
-        <form id="tutoringForm">
+        <form action="https://formspree.io/f/mnnaaogk" method="POST" id="tutoringForm">
           <!-- Student Name -->
           <div class="form-group">
             <label for="studentName">Student Name</label>
@@ -170,25 +170,39 @@
             <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
           </div>
 
-          <!-- Tutor Dropdown -->
+          <!-- <div class="form-group">
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+          </div> -->
+
           <div class="form-group">
+            <label for="courseName">Course Name</label>
+            <select class="form-control" id="courseName" name="courseName" required>
+              <option value="IGCSE">IGCSE (Cambridge)</option>
+              <option value="CBSE">CBSE (Central Board of Secondary Education)</option>
+              <option value="ICSE">ICSE (Indian Certificate of Secondary Education)</option>
+            </select>
+          </div>
+
+
+          <!-- Tutor Dropdown -->
+          <!-- <div class="form-group">
             <label for="tutor">Select Tutor</label>
             <select class="form-control" id="tutor" name="tutor" onchange="updateSubjects()">
               <option value="">Select Tutor</option>
               <option value="tutor1">Ayush Dubey</option>
               <option value="tutor2">Arpit Dubey</option>
-              <!-- <option value="tutor3">Tutor 3</option> -->
-              <!-- Add more options as needed -->
+            
             </select>
-          </div>
+          </div> -->
 
           <!-- Subject Dropdown -->
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="subject">Select Subject</label>
             <select class="form-control" id="subject" name="subject" disabled required>
               <option value="">Select Tutor first</option>
             </select>
-          </div>
+          </div> -->
 
           <!-- Preferred Date/Time for Tutoring -->
           <div class="form-group">
@@ -206,7 +220,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-      <script>
+      <!-- <script>
         // Function to update subjects based on selected tutor
         function updateSubjects() {
           var tutor = document.getElementById('tutor').value;
@@ -259,7 +273,7 @@
           option.value = optionText.toLowerCase(); // Use lowercase as value for simplicity
           selectElement.appendChild(option);
         }
-      </script>
+      </script> -->
     </section><!-- /Courses Section -->
 
   </main>
